@@ -12,9 +12,20 @@
 <button (click)="adicionarTarefa()">Adicionar</button> <!--Confifurado, para quando apertar, lcick, chamar adicionar, uma função basicamente   -->
 
 <ul>
-    @for (item of listaTarefas; track item){
-        <li>{{ item }}</li>
+     @for (item of listaTarefas; track item; let i = $index){
+       
+    
+    <div class="teste">
+     <li>{{ item }}</li>   <button (click)="removerTarefa(i)">REMOVER🗑️</button>
+    </div>
+     }
+       @empty {
+        <li>Nada adicionado</li>
     }
+   
+
+
 </ul>
+
 
 </body>

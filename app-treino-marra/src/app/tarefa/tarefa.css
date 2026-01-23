@@ -46,3 +46,11 @@ button {
     border-radius: 3px;
     cursor: pointer;
 }
+
+.teste {
+  display: flex;         /* Ativa o modo de linha flexível */
+  align-items: center;   /* Alinha o texto e o botão verticalmente ao centro */
+  justify-content: space-between; /* Empurra o texto para a esquerda e o botão para a direita */
+  max-width: 300px;      /* Define uma largura máxima para não ficar espalhado demais */
+  margin-bottom: 8px;    /* Dá um respiro entre uma tarefa e outra */
+}

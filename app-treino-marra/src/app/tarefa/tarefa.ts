@@ -22,7 +22,12 @@ export class Tarefa {
     if (this.novaTarefa.trim() !== '') {//verifica se a nova tarefa não está vazia
       this.listaTarefas.push(this.novaTarefa.trim());//adiciona a nova tarefa na lista
       this.novaTarefa = '';//limpa o campo de entrada
-    }
+    } }
 
-}
-}
+    //função para remover tarefa, configurando a função em si
+    removerTarefa(index: number) {
+      this.listaTarefas.splice(index, 1);//remove a tarefa da lista com base no índice fornecido
+      }
+
+  }
+
