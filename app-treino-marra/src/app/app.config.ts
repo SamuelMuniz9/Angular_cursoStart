@@ -9,8 +9,10 @@ export class AppModule {}// configuração do modulo principal da aplicação
 
 import { routes } from './app.routes';
 
+
+
 export const appConfig: ApplicationConfig = {
-  providers: [
+  providers: [ 
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes)
   ]

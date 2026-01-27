@@ -1,12 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --cor-primaria: #29CF01;
+    --cor-secundaria: 191919;
+    --fonte-principal: 'inter', bold;
+}
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-principal);
     margin: 0;
     padding: 0;
-    background-color: #e7e2e6;
+    background-color: var(--cor-primaria);
+
 }
-h1 {
-    color: #ce1717;
-    text-align: center;
-    margin-top: 20px;
+main {
+    background-color: var(--cor-secundaria);
 }
